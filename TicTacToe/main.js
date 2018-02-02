@@ -4,7 +4,7 @@ $(document).ready(function(){
 
 function makeBoard() {
 	var user_input = $('.boardSize').val();
-	var  size = Number(user_input).toFixed(1);
+	var  size = Number(user_input).toFixed(0);
 	var board = $('.board');
 	board.empty();
 	var rowNumber = 0;
