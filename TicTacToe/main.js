@@ -7,9 +7,9 @@ function makeBoard() {
 	var  size = Number(user_input).toFixed(0);
 	var board = $('.board');
 	board.empty();
-	var rowNumber = 0;
+	var rowNumber = 0;  //can use size instead.  Kept in case asymetric board is needed in the future.
 	var colNumber = 0;
-	if (size) {
+	if (size > 2) {
 		for (var i = 0; i < size; i++){
 			var row = $('<div>').addClass('row'+(i+1)); 
 			for (var j = 0; j < size; j++) {
